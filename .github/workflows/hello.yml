@@ -9,12 +9,11 @@ jobs:
       - run: ls
       - run: pwd
       - run: ls -la  
-      - run: java -version 
-      - run: cd template-progetto 
+      - run: java -version
       - run: ls
       - run: pwd 
-        working-directory: template-progetto
+        working-directory: DatabaseFilm 
       - run: mvn install -DskipTests
-        working-directory: template-progetto 
+        working-directory: DatabaseFilm 
       - run: mvn test
-        working-directory: template-progetto
+        working-directory: DatabaseFilm 

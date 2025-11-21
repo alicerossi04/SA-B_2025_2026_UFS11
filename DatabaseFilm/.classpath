@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/antoniolezzi/eclipse-workspace/DatabaseFilm/libs/mysql-connector-java-8.0.18.jar"/>
+	<classpathentry kind="lib" path="/Users/antoniolezzi/eclipse-workspace/DatabaseFilm/libs/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="/Users/antoniolezzi/eclipse-workspace/DatabaseFilm/libs/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="/Users/antoniolezzi/eclipse-workspace/DatabaseFilm/libs/fluent-hc-4.5.2.jar"/>
+	<classpathentry kind="lib" path="/Users/antoniolezzi/eclipse-workspace/DatabaseFilm/libs/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="/Users/antoniolezzi/eclipse-workspace/DatabaseFilm/libs/httpclient-cache-4.5.2.jar"/>
+	<classpathentry kind="lib" path="/Users/antoniolezzi/eclipse-workspace/DatabaseFilm/libs/httpclient-win-4.5.2.jar"/>
+	<classpathentry kind="lib" path="/Users/antoniolezzi/eclipse-workspace/DatabaseFilm/libs/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="/Users/antoniolezzi/eclipse-workspace/DatabaseFilm/libs/httpmime-4.5.2.jar"/>
+	<classpathentry kind="lib" path="/Users/antoniolezzi/eclipse-workspace/DatabaseFilm/libs/java-json.jar"/>
+	<classpathentry kind="lib" path="/Users/antoniolezzi/eclipse-workspace/DatabaseFilm/libs/jna-4.1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/antoniolezzi/eclipse-workspace/DatabaseFilm/libs/jna-platform-4.1.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

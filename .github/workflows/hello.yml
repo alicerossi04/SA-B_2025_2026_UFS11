@@ -1,20 +1,35 @@
-name: Il mio primo github action
-on: 
-  push: 
-jobs: 
-  italian-job:
+name: Java CI
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-and-run:
+    name: Build and Run
     runs-on: ubuntu-latest
-    steps: 
-      - uses: actions/checkout@v4  
-      - run: ls
-      - run: pwd
-      - run: ls -la  
-      - run: java -version 
-      - run: cd template-progetto 
-      - run: ls
-      - run: pwd 
-        working-directory: template-progetto
-      - run: mvn install -DskipTests
-        working-directory: template-progetto 
-      - run: mvn test
-        working-directory: template-progetto
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Validate project structure
+        run: ls -R
+
+      - name: Compile Java project
+        working-directory: DatabaseFilm
+        run: |
+          mkdir -p bin
+          javac -d bin -cp 'libs/*' src/*.java
+
+      - name: Run Java project
+        working-directory: DatabaseFilm
+        run: java -cp 'bin:libs/*' Principale
